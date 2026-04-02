@@ -90,6 +90,8 @@ After scan, "Repair selected" and "Repair all errors" buttons are enabled only i
 
 **Catalog search:** populates a search term from the selected device (friendly name or class), opens `catalog.update.microsoft.com/Search.aspx?q=<term>` in the default browser.
 
+![drt 1](./images/drt1.png)
+
 ---
 
 ### Tab 2 — Driver Store
@@ -106,6 +108,7 @@ Displayed per driver package:
 
 Driver removal calls `pnputil /delete-driver <name> /force` only after validating that the name matches `^oem\d+\.inf$`. The store is re-scanned automatically after removal.
 
+![drt 2](./images/drt2.png)
 ---
 
 ### Tab 3 — Event Log
@@ -152,6 +155,7 @@ Scan range: 7 days or 30 days (two buttons).
 Double-click on any row opens a popup with the full event message.  
 "Copy" button puts the full event detail to the clipboard.
 
+![drt 3](./images/drt3.png)
 ---
 
 ### Tab 4 — Windows Update (Driver Updates)
@@ -200,6 +204,7 @@ Generates a dark-theme HTML file to the desktop (`DeviceRepairTool_Report_<times
 
 All values are HTML-escaped before insertion. The report is built with `StringBuilder` to avoid repeated string concatenation. Layout uses CSS grid and flexbox, sticky table headers, responsive columns.
 
+![drt 4](./images/drt4.png)
 ---
 
 ## Logging
